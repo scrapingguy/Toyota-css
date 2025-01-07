@@ -83,9 +83,7 @@ body {
 .page-box {
     margin: 0;
     padding: 0;
-   
     position: relative;
-   
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -94,8 +92,8 @@ body {
 
 .page-title {
     padding-left: 5px;
-    margin: 0; /* Remove margin */
-    /* Remove padding */
+    margin: 0; 
+  
     font-size: 26px;
    
 }
@@ -126,9 +124,8 @@ body {
 
 .car-details {
     display:flex;
-   padding-bottom: 8px;
-    align-items: center;
-    justify-content: space-between; 
+    padding-bottom: 8px;
+    align-items: center; 
     gap: 20px; 
     
 }
@@ -137,6 +134,18 @@ body {
     max-width: 150px;
     object-fit: cover; }
 
+.Details-container {
+        margin: 0px;
+        padding: 0px;
+        display: contents;
+    }
+
+    .table-container{
+        width: 70%;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
 .table-details {
     margin-left: -3px;
     margin-top: -20px;
@@ -205,30 +214,22 @@ body {
 
 
 .btn-attr {
-    text-transform: uppercase;
-    text-decoration: none; 
-    font-weight: 600;
-    letter-spacing: .12em;
-    height: 40px; 
-    width: 125px; 
-    margin: 0px 0px;
-    color: #1a1a1a;
-    background-color: #fff;
-    border: 1px solid #1a1a1a;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 0; 
-    border-radius: 7px; 
-    font: 12px / 1.2 ToyotaTypeSemibold, Arial, Helvetica, sans-serif;
-    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+    text-align: center;
+    width: 100%;
+    font-family: "FordAntenna-Bold", Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    border-radius: 5px;
+    color: #ffff;
+    background-color: #2d96cd;
+    border-bottom: 1px solid #1e79ab;
 }
 
-.btn-attr:hover {
-    color: #fff;
-    background-color: #1a1a1a;
-    border: 1px solid #1a1a1a;
-}
+
 
 .attr-value{
     text-align: end;
@@ -255,7 +256,11 @@ body {
     border: 1px solid rgba(0, 123, 255, 0.5);
 }
 
-
+ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes extra padding */
+    margin: 0; /* Removes extra margin */
+  }
 
 .result-count-btn:active {
     box-shadow: none;
@@ -274,14 +279,15 @@ ul {
     margin-top: 18px;
     font-family: "ToyotaTypeSemiBold", Arial, Helvetica, sans-serif;
     margin-left: 5px;
-    height: 12.6px;
-    font-size: 1em;
+    height: 26.6px;
+    font-size: 2rem;
     color: #001c35;
+    font-weight: bold;
 }
 
 
-.car1{
-    width: 600px;
+.car{
+    width:100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -289,36 +295,104 @@ ul {
     padding-bottom: 10px;
 }
 
-.car2{
-    width: 600px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #e6e6e6; 
-    padding-bottom: 10px;
-}
 
-.car3{
-    width: 600px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #e6e6e6;
-    padding-bottom: 10px;
-}
+/* Responsive Styles for Mobile Phones */
+/* Responsive Styles for Mobile Phones */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically */
+        padding: 10px;
+    }
 
-.car4{
-    width: 600px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #e6e6e6; 
-    padding-bottom: 10px;
-}
+    .page-title {
+        font-size: 20px;
+        text-align:start; /* Center align text */
+    }
 
-.car5{
-    width: 600px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+    .result {
+        flex-direction: column;
+        margin-top: 10px;
+       
+    }
+
+    .result-count{
+        
+            font-size: 14px;
+            width: 100%;
+            text-align:start;
+        
+    }
+    .Default-btn {
+        font-size: 14px;
+        width: 100%;
+        text-align:center;
+    }
+
+    .car-details {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;  
+    }
+
+    .car-images {
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+    }
+
+    
+
+    .Details-container{
+        margin: 0;
+        padding: 0;
+        width: 70%;
+        height: 100%;
+        display: flex
+;
+        flex-direction: column;
+    }
+
+    .table-details {
+        margin: 0;
+         width: auto;
+        font-size: 0.9rem; /* Reduce font size for readability */
+    }
+
+    .price-moreDetails {
+        font-size: 14px;
+        margin-top: 20px;
+        flex-direction: row;
+        margin-left: -140px;
+    }
+
+    .attr-price {
+        font-size:20px; /* Slightly smaller font */
+    }
+
+    .btn-attr {
+        height: 45px;
+        font-size: 12px;
+        width: 120px;
+    
+    }
+
+    .h1-details {
+        font-size: 18px;
+        margin-left: 0px;
+        text-align: start; /* Center align for mobile */
+    }
+
+    .car {
+        padding-bottom: 15px;
+    }
+
+    .attr-driveaway{
+        margin-top: 7px;
+    }
+
+    .result-count-btn {
+        width: 100%;
+        font-size: 12px; /* Slightly smaller font */
+        height: 40px; /* Increase height for touch targets */
+    }
 }
