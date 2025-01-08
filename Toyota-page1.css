@@ -75,8 +75,8 @@ body {
 }
 .container {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
+    justify-content: center; 
+    align-items: center;
 
 }
 
@@ -123,12 +123,14 @@ body {
 
 
 .car-details {
-    display:flex;
+    margin-top: 5px;
+    display: flex
+;
     padding-bottom: 8px;
-    align-items: center; 
-    gap: 20px; 
-    
+    align-items: center;
+    gap: 20px;
 }
+
 .car-images {
     height: 150px;
     max-width: 150px;
@@ -141,7 +143,7 @@ body {
     }
 
     .table-container{
-        width: 70%;
+        width:780px;
         height: auto;
         margin: 0px;
         padding: 0px;
@@ -202,7 +204,6 @@ body {
 .attr-driveaway{
     
         display: flex;
-        flex-direction: column;
         justify-content: space-around;
         gap: 4px;
         font-size: 16px;
@@ -212,19 +213,16 @@ body {
         
     }
 
-
-.btn-attr {
+    
+.vc_general  {
     text-align: center;
     width: 100%;
     font-family: "FordAntenna-Bold", Arial, Helvetica, sans-serif;
     font-size: 17px;
     font-weight: bold;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 20px;
-    padding-right: 20px; 
     border-radius: 5px;
     color: #ffff;
+    width: 160px;
     background-color: #2d96cd;
     border-bottom: 1px solid #1e79ab;
 }
@@ -233,6 +231,14 @@ body {
 
 .attr-value{
     text-align: end;
+}
+.price{
+ margin: 0px;
+ padding: 0px;
+}
+.attr-driveaway{
+    
+     margin-top: -10px;
 }
 
 .result-count-btn {
@@ -256,10 +262,10 @@ body {
     border: 1px solid rgba(0, 123, 255, 0.5);
 }
 
-ul {
-    list-style: none; /* Removes bullet points */
-    padding: 0; /* Removes extra padding */
-    margin: 0; /* Removes extra margin */
+ul,li {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
   }
 
 .result-count-btn:active {
@@ -269,20 +275,16 @@ ul {
     transition: box-shadow 0.1s ease, background-color 0.1s ease;
 }
 
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 .h1-details {
-    margin-top: 18px;
-    font-family: "ToyotaTypeSemiBold", Arial, Helvetica, sans-serif;
-    margin-left: 5px;
-    height: 26.6px;
-    font-size: 2rem;
-    color: #001c35;
+    font-family: "FordAntenna-Bold" !important;
+    font-size: 15px;
     font-weight: bold;
+    color: #001c35;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-top: 0px;
 }
 
 
@@ -296,17 +298,15 @@ ul {
 }
 
 
-/* Responsive Styles for Mobile Phones */
-/* Responsive Styles for Mobile Phones */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         padding: 10px;
     }
 
     .page-title {
         font-size: 20px;
-        text-align:start; /* Center align text */
+        text-align:start; 
     }
 
     .result {
@@ -334,9 +334,9 @@ ul {
         gap: 10px;  
     }
 
-    .car-images {
-        height: 150px;
-        width: 150px;
+    .car-images img{
+        height: 140px;
+        width: 140px;
         object-fit: cover;
     }
 
@@ -352,24 +352,38 @@ ul {
         flex-direction: column;
     }
 
+    .table-container{
+        width:auto;
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+    }
     .table-details {
         margin: 0;
          width: auto;
-        font-size: 0.9rem; /* Reduce font size for readability */
+        font-size: 0.9rem; 
     }
 
     .price-moreDetails {
         font-size: 14px;
         margin-top: 20px;
-        flex-direction: row;
+        flex-direction: column;
         margin-left: -140px;
+        margin-bottom: 20px;
     }
 
     .attr-price {
         font-size:20px; /* Slightly smaller font */
     }
 
-    .btn-attr {
+     .vc_btn3.vc_btn3-size-md{
+        margin-top: -60px;
+        margin-left: 138px;
+        height: 45px;
+        width: 160px;
+    
+    } 
+    .vc_general  {
         height: 45px;
         font-size: 12px;
         width: 120px;
@@ -377,7 +391,7 @@ ul {
     }
 
     .h1-details {
-        font-size: 18px;
+        font-size: 12px;
         margin-left: 0px;
         text-align: start; /* Center align for mobile */
     }
@@ -387,12 +401,12 @@ ul {
     }
 
     .attr-driveaway{
-        margin-top: 7px;
+        margin-top: -10px;
     }
 
     .result-count-btn {
         width: 100%;
-        font-size: 12px; /* Slightly smaller font */
-        height: 40px; /* Increase height for touch targets */
+        font-size: 12px; 
+        height: 40px;
     }
 }
